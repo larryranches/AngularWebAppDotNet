@@ -1,0 +1,75 @@
+﻿<h2>{{ pageTitle }}</h2>
+
+<div ng-cloak>
+    <div class="" style="width: 1200px">
+        <br />
+        <span ng-show="showUpdate">{{ displayUpdate }}</span>
+        <div>
+            <button class="btn btn-success" style="" ng-click="toggleAddMode()"> + Add User</button>
+        </div>
+        <table class="table table-striped table-bordered table-condensed table-hover">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th style="width: 140px;"></th>
+
+            </tr>
+            <tr ng-show="addMode">
+                <td>
+                    <input ng-model="user.FirstName" required=""/>
+                </td>
+                <td>
+                    <input ng-model="user.LastName" />
+                </td>
+                <td>
+                    <input ng-model="user.Email" />
+                </td>
+                <td>
+                    <input ng-model="user.Country" />
+                </td>
+                <td>
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-success" ng-click="addUser()">Save</button>
+                            <button class="btn btn-warning" ng-click="toggleAddMode()">Cancel</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr ng-repeat="user in Users">
+                <td>
+                    <span ng-show="user.editMode == null || user.editMode == false">{{user.FirstName}}</span>
+                    <input required="Please Enter First Name" ng-model="user.FirstName" ng-show="user.editMode == true" />
+                </td>
+                <td>
+                    <span ng-show="user.editMode == null || user.editMode == false">{{user.LastName}}</span>
+                    <input ng-model="user.LastName" ng-show="user.editMode == true" />
+                </td>
+                <td>
+                    <span ng-show="user.editMode == null || user.editMode == false">{{user.Email}}</span>
+                    <input ng-model="user.Email" ng-show="user.editMode == true" />
+                </td>
+                <td>
+                    <span ng-show="user.editMode == null || user.editMode == false">{{user.Country}}</span>
+                    <input ng-model="user.Country" ng-show="user.editMode == true" />
+                </td>
+                <td>
+                    <div class="btn-toolbar" ng-show="user.editMode == null || user.editMode == false">
+                        <div class="btn-group">
+                            <button class="btn btn-info" ng-click="toggleEditMode(user)">Edit</button>
+                            <button class="btn btn-danger" ng-click="deleteUser(user.UserId)">Delete</button>
+                        </div>
+                    </div>
+                    <div class="btn-toolbar" ng-show="user.editMode == true">
+                        <div class="btn-group">
+                            <button class="btn btn-success" ng-click="updateUser(user)">Save</button>
+                            <button class="btn btn-warning" ng-click="toggleEditMode(user)">Cancel</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

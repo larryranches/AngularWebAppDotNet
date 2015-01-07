@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Load admin theme styles -->
+    <link href="~/Content/Admin/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Admin/css/sb-admin.css" rel="stylesheet" />
+    <link href="~/Content/Admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/ng-grid.css" rel="stylesheet" />
+    <style type="text/css">
+        .gridStyle {
+            border: 1px solid rgb(212,212,212);
+            width: 1100px;
+            height: 600px;
+        }
+    </style>
+
+    <!-- Load Core JS Libraries-->
+    <script src="~/Scripts/jquery-2.1.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+
+    <!-- Load Angular Core Libraries-->
+    <script src="~/Scripts/Angular/angular.js"></script>
+    <script src="~/Scripts/Angular/angular-resource.js"></script>
+    <script src="~/Scripts/ng-grid.js"></script>
+    <script src="~/Scripts/lodash.js"></script>
+    <script src="~/Scripts/restangular.js"></script>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

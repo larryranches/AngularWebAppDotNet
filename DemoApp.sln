@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Data", "DemoApp.Data\DemoApp.Data.csproj", "{05AD4F3F-70DB-4AE0-A513-95BF7241B465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Domain", "DemoApp.Domain\DemoApp.Domain.csproj", "{1C1B1622-8E61-4694-9E34-E4FC17D05F55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Web", "DemoApp.Web\DemoApp.Web.csproj", "{CA47D19C-3B5A-4BB1-8063-1A1CFA24B3CC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ranches.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DemoApp.Data\\DemoApp.Data.csproj
+		SccProjectName1 = DemoApp.Data
+		SccLocalPath1 = DemoApp.Data
+		SccProjectUniqueName2 = DemoApp.Domain\\DemoApp.Domain.csproj
+		SccProjectName2 = DemoApp.Domain
+		SccLocalPath2 = DemoApp.Domain
+		SccProjectUniqueName3 = DemoApp.Web\\DemoApp.Web.csproj
+		SccProjectName3 = DemoApp.Web
+		SccLocalPath3 = DemoApp.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05AD4F3F-70DB-4AE0-A513-95BF7241B465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05AD4F3F-70DB-4AE0-A513-95BF7241B465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05AD4F3F-70DB-4AE0-A513-95BF7241B465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05AD4F3F-70DB-4AE0-A513-95BF7241B465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1B1622-8E61-4694-9E34-E4FC17D05F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1B1622-8E61-4694-9E34-E4FC17D05F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1B1622-8E61-4694-9E34-E4FC17D05F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1B1622-8E61-4694-9E34-E4FC17D05F55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA47D19C-3B5A-4BB1-8063-1A1CFA24B3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA47D19C-3B5A-4BB1-8063-1A1CFA24B3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA47D19C-3B5A-4BB1-8063-1A1CFA24B3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA47D19C-3B5A-4BB1-8063-1A1CFA24B3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
